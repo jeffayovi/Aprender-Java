@@ -1,0 +1,38 @@
+Conversión de Galones a Litros
+Aunque los programas de ejemplo anteriores ilustran varias características importantes del lenguaje Java, no son muy útiles.
+ Aunque en este momento no conozca mucho sobre Java, puede poner en práctica lo que ha aprendido para crear un programa práctico.
+ En este proyecto, crearemos un programa que convierta galones a litros. litros en un galón. Así, para convertir galones a litros,
+ el valor del galón se multiplica por 3.7854. El programa muestra tanto el número de galones como el número equivalente de litros.
+El programa funcionará declarando dos variables dobles. Una contendrá el número de galones, y la segunda contendrá el número de
+litros después de la conversión. Hay 3.7854.
+
+Analisis de Problema
+
+Objetivo de Programa: Convertir una cantidad dada de galones a su equivalente en litros y mostrar ambos valores.
+
+Entrada: Una cantidad específica de galones.
+
+Proceso:
+1.Constante de conversión: 1 galón = 3.7854 litros
+2.El cálculo se realiza multiplicando la cantidad de galones por esta constante.
+
+Salida:
+El número original de galones.
+El número equivalente de litros.
+
+algoritmo GalonesALitros_Simple
+1. Declaración de variables y constantes
+cost
+  FACTOR_CONVERSION = 3.7854
+var
+  real: galones
+  real: litros
+inicio
+2. Asignación del valor de entrada (galones)
+  galones <- 10.0
+3. Realizar el cálculo de conversión
+  litros <- galones * FACTOR_CONVERSION
+4. Mostrar los resultados
+  escribir("La cantidad de galones es: ", galones)
+  escribir("La cantidad equivalente en litros es: ", litros)
+fin
