@@ -1,0 +1,44 @@
+Mejorando el Conversor de Galones a Litros
+
+Puede utilizar el bucle for, la sentencia if, y bloques de código para crear una versión mejorada del conversor de galones
+a litros que desarrolló en el primer proyecto. Esta nueva versión imprimirá una tabla de conversiones, comenzando con
+1 galón y terminando en 100 galones. Después de cada 10 galones, se imprimirá una línea en blanco.
+ Esto se logra mediante el uso de una variable llamada contador que cuenta el número de líneas que han sido impresas.
+ Preste especial atención a su uso.
+
+ algoritmo TablaGalonesALitros
+ //este algoritmo genera una tabla de conversión de galones a litros
+ // desde 1 hasta 100 galones, con una línea en blanco cada 10 entradas.
+// 1. Declaración de variables y constantes
+cost
+  FACTOR_CONVERSION = 3.7854  // Litros por galón
+  MAX_GALONES = 100           // Límite superior de galones para la tabla
+  LINEAS_POR_GRUPO = 10       // Número de conversiones por grupo antes de una línea en blanco
+var
+  entero : galones           // Variable para el conteo de galones (índice del bucle)
+  real   : litros             // Cantidad equivalente en litros
+  entero : contador_lineas   // Contador para el número de líneas impresas en el grupo actual
+inicio
+  // 2. Inicializar el contador de líneas
+  contador_lineas ← 0
+  // 3. Bucle para iterar de 1 a MAX_GALONES (100)
+  desde galones ← 1 hasta MAX_GALONES hacer
+    // 3.1. Calcular la cantidad de litros para el número actual de galones
+     litros ← galones * FACTOR_CONVERSION
+
+     // 3.2. Mostrar la conversión actual [20]
+     escribir(galones, " galones es equivalente a ", litros, " litros")
+
+     // 3.3. Incrementar el contador de líneas
+     contador_lineas ← contador_lineas + 1
+
+     // 3.4. Verificar si es momento de imprimir una línea en blanco
+     // Se usa el operador módulo (%) para verificar si el contador_lineas es múltiplo de LINEAS_POR_GRUPO
+     // y si no es la última línea para evitar un salto de línea al final que podría no ser deseado.
+     si (contador_lineas = LINEAS_POR_GRUPO) entonces
+         escribir("") // Imprimir una línea en blanco
+         contador_lineas ← 0 // Reiniciar el contador de líneas para el siguiente grupo
+     fin_si
+  fin_desde
+fin
+
