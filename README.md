@@ -1,5 +1,5 @@
 
-# 📅 Plan de Aprendizaje de Java (6 Meses)
+# 📅 Plan de Aprendizaje de Java 
 
 ## ✅ Primer Mes: Fundamentos de Programación y Java Básico
 
