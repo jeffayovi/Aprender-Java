@@ -1,0 +1,38 @@
+¿A qué distancia está el rayo?
+
+En este proyecto, usted creará un programa que calcule cuán lejos, en pies, está un oyente de un relámpago.
+El sonido viaja aproximadamente 1.100 pies por segundo a través del aire. Por lo tanto, conocer el intervalo entre el momento
+en que ves un rayo y el momento en que el sonido te alcanza te permite calcular la distancia al rayo. Para este proyecto,
+supongamos que el intervalo de tiempo es de 7,2 segundos.
+
+Analisis de Problema
+
+Entrada:
+Velocidad del sonido en el aire: 1100 pies por segundo( constante)
+Intervalo de tiempo: 7.2 segundo
+
+Salida:
+distancia al rayo, expresada en pies
+
+Proceso
+Distancia = Velocidad × Tiempo
+
+algoritmo CalcularDistanciaRayo
+//Declaracion de variable
+var
+  velocidad_sonido
+  intervalo_tiempo
+  distancia_rayo
+inicio
+  // Paso 1: Inicializar la velocidad del sonido.
+  velocidad_sonido ← 1100.0
+
+  // Paso 2: Establecer el intervalo de tiempo
+  intervalo_tiempo ← 7.2
+
+  // Paso 3: Calcular la distancia al rayo.
+  distancia_rayo ← velocidad_sonido * intervalo_tiempo
+
+   // Paso 4: Visualizar el resultado.
+   escribir("La distancia al rayo es:", distancia_rayo, "pies")
+fin
